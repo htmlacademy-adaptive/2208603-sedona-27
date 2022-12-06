@@ -1,0 +1,43 @@
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  &--real-town,
+  &--devils-bridge {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 37px 0 22px 0;
+  &--amenities {
+    text-align: start;
+    padding: 31px 0 16px 63px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  text-align: center;
+  padding: 22px 0 37px 0;
+  text-transform: uppercase;
+  &--amenities {
+    text-align: start;
+    padding-left: 63px;
+}
+}
+
+.advantages__count {
+  text-align: center;
+  display: block;
+}
