@@ -1,0 +1,23 @@
+.catalog-pictures__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-pictures__item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 24px 20px;
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.catalog-pictures__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog-pictures__caption {
+  text-transform: uppercase;
+  font-weight: 700;
+}

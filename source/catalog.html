@@ -2,20 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="/images/content/main-logo.svg" width="185" height="96"
-        alt="Логотип Седоны.">
+        <img src="img/content/main-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -40,15 +43,16 @@
     </header>
     <main class="catalog-container">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="hero-block-catalog">
-        <div class="hero-block-catalog__wrapper">
+      <section class="hero-block">
+        <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Седона</h2>
+          <img class="hero-block__image" src="img/content/hero.svg" width="229" height="39" alt="Седона.">
         </div>
       </section>
-      <section class="gallery">
-        <div class="gallery__wrapper">
-          <h2 class="gallery__title">Фото и видео</h2>
-          <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="catalog-pictures-intro">
+        <div class="catalog-pictures-intro__wrapper">
+          <h2 class="catalog-pictures-intro__title">Фото и видео</h2>
+          <p class="catalog-pictures-intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </section>
       <section class="catalog-pictures">
@@ -57,47 +61,47 @@
           <ul class="catalog-pictures__list">
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="#" alt="Неродные просторы." width="280" height="280">
+                <img src="img/content/gallery-sunset.jpg" alt="Неродные просторы." width="280" height="280">
                 <figcaption class="catalog-pictures__caption">Неродные просторы</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Борис</span>
               <button class="catalog-pictures__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
-                <span class="catalog-pictures__like-count">1350</span>
               </button>
+              <span class="catalog-pictures__like-count">1350</span>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="#" alt="Местная растительность." width="280" height="280">
+                <img src="img/content/gallery-plants.jpg" alt="Местная растительность." width="280" height="280">
                 <figcaption class="catalog-pictures__caption">Местная растительность</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Сергей</span>
               <button class="catalog-pictures__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
-                <span class="catalog-pictures__like-count">143</span>
               </button>
+              <span class="catalog-pictures__like-count">143</span>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="#" alt="Дорога на север." width="280" height="280">
+                <img src="img/content/gallery-north.jpg" alt="Дорога на север." width="280" height="280">
                 <figcaption class="catalog-pictures__caption">Дорога на север</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Петр</span>
               <button class="catalog-pictures__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
-                <span class="catalog-pictures__like-count">96</span>
               </button>
+              <span class="catalog-pictures__like-count">96</span>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="#" alt="Мост дьявола." width="280" height="280">
+                <img src="img/content/gallery-devils-bridge.jpg" alt="Мост дьявола." width="280" height="280">
                 <figcaption class="catalog-pictures__caption">Мост дьявола</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Антон</span>
               <button class="catalog-pictures__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
-                <span class="catalog-pictures__like-count">254</span>
               </button>
+              <span class="catalog-pictures__like-count">254</span>
             </li>
           </ul>
         </div>
@@ -106,7 +110,7 @@
         <div class="catalog-presentation__wrapper">
           <h2 class="catalog-presentation__title">Все еще сомневаетесь?</h2>
           <p class="catalog-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="catalog-presentation__preview" src="#" alt="Видеопрезентация.">
+          <img class="catalog-presentation__preview" src="img/content/video-preview.jpg" width="280" height="177" alt="Видеопрезентация.">
         </div>
       </section>
     </main>
@@ -120,13 +124,19 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Контакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>

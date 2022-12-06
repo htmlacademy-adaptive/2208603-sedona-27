@@ -1,0 +1,39 @@
+.main-footer {
+  padding: 39px 0 23px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.main-footer__hashtag {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding-bottom: 33px;
+  margin: 0 auto;
+}
+
+.hashtag__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.main-footer__copyright-description {
+  text-transform: uppercase;
+}
