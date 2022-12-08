@@ -9,21 +9,13 @@
 .review-form__label {
   text-transform: uppercase;
   &--control {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: start;
-  padding-left: 82px;
-  padding-top: 16px;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 700;
+   text-align: start;
+   padding-left: 82px;
+   padding-top: 16px;
   }
-}
-
-.form-page-intro__title {
-  text-transform: uppercase;
-}
-
-.form-page-intro__description {
-  text-transform: uppercase;
 }
 
 .review-form__group {
