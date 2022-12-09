@@ -67,11 +67,11 @@
       <fieldset class="review-form__group">
         <legend class="review-form__legend">Контактная информация:</legend>
           <label class="review-form__label" for="phone-input">Контактный телефон*:</label>
-          <input class="review-form__phone-input" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
+          <input class="review-form__input" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
           <label class="review-form__label" for="email-input">Электронная почта*:</label>
-          <input class="review-form__email-input" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
+          <input class="review-form__input" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
       </fieldset>
-      <fieldset class="review-form__group">
+      <fieldset class="review-form__group review-form__group--wide">
         <legend class="review-form__legend">Ваше общее впечатление:</legend>
           <label class="review-form__label--control" for="positive-impression">Скорее положительное</label>
           <input class="review-form__button visually-hidden" type="radio" id="positive-impression" name="positive-impression" checked>
@@ -80,7 +80,7 @@
           <label class="review-form__label--control" for="uncertain">Затрудняюсь ответить</label>
           <input class="review-form__button visually-hidden" type="radio" id="uncertain" name="uncertain">
       </fieldset>
-      <fieldset class="review-form__group">
+      <fieldset class="review-form__group review-form__group--wide">
         <legend class="review-form__legend">Посещенные достопримечательности:</legend>
           <label class="review-form__label--control" for="checkbox-devils-bridge">Мост Дьявола</label>
           <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-devils-bridge" name="checkbox-devils-bridge" checked>
@@ -91,7 +91,7 @@
           <label class="review-form__label--control" for="checkbox-red-rocks">Красные скалы</label>
           <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-red-rocks" name="checkbox-red-rocks">
       </fieldset>
-      <fieldset class="review-form__group">
+      <fieldset class="review-form__group review-form__group--wide">
         <legend class="review-form__legend">Опишите свои эмоции:</legend>
           <textarea class="review-form__text-input" name="review-input" placeholder="Опишите подробно все свои восторги" rows="8"></textarea>
           <button class="review-form__submit-button button" type="submit">Отправить отзыв</button>
@@ -100,7 +100,6 @@
       </form>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
         <div class="main-footer__hashtag hashtag">
           <a class="hashtag__link" href="#">
             <span class="hashtag__text">#VISITSEDONA</span>
@@ -129,7 +128,6 @@
           <p class="main-footer__copyright-description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
-      </div>
     </footer>
   </body>
 </html>

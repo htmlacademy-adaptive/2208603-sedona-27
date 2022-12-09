@@ -1,3 +1,14 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width:$tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .review-form__legend {
   font-size: 18px;
   line-height: 26px;
@@ -9,18 +20,39 @@
 .review-form__label {
   text-transform: uppercase;
   &--control {
-   font-size: 18px;
-   line-height: 26px;
-   font-weight: 700;
-   text-align: start;
-   padding-left: 82px;
-   padding-top: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 82px;
+    padding-top: 16px;
+    font-family: inherit;
   }
 }
 
 .review-form__group {
   display: flex;
   flex-direction: column;
+
+  @media (min-width:$tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 480px;
+  }
+}
+
+.review-form__group--wide {
+  width: 280px;
+
+  @media (min-width:$tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 960px;
+  }
 }
 
 .review-form__caption {
@@ -29,12 +61,14 @@
 }
 
 .review-form__text-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
   background-color: #F2F2F2;
   border: none;
+  padding: 16px;
 }
 
 .review-form__name-input {
@@ -48,14 +82,7 @@
   padding-left: 16px;
 }
 
-.review-form__phone-input {
-  width: 280px;
-  height: 58px;
-  background-color: #F2F2F2;
-  border: none;
-}
-
-.review-form__email-input {
+.review-form__input {
   width: 280px;
   height: 58px;
   background-color: #F2F2F2;

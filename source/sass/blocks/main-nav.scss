@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+.main-nav__list a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+.main-nav__toggle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: none;
+
+    @media (min-width:$tablet-width) {
+      display: none;
+    }
+
+    @media (min-width:$desktop-width) {
+      display: none;
+    }
+ }
