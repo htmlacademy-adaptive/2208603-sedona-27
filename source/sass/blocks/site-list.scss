@@ -1,0 +1,31 @@
+.site-list {
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media (min-width:$desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.site-list__item {
+    @media (min-width:$tablet-width) {
+        width: 153px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 240px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
