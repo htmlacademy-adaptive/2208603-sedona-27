@@ -32,7 +32,12 @@
   }
 }
 
+.advantages__item img {
+  display: block;
+}
+
 .advantages__item--img {
+
   @media (min-width:$tablet-width) {
     width: 512px;
   }
@@ -40,7 +45,6 @@
   @media (min-width:$desktop-width) {
     width: 800px;
   }
-
 }
 
 .advantages__title {

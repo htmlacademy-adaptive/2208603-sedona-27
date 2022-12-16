@@ -1,16 +1,25 @@
 .main-nav {
-  position: relative;
+    position: relative;
+    min-height: 56px;
+    background-color: #81B3D2;
+
+    @media (min-width:$tablet-width) {
+      background-color: #ffffff;
+    }
+}
+
+.main-nav--closed {
+    background-color: #ffffff;
+}
+
+.main-nav--opened {
+    z-index: 2;
 }
 
 .main-nav__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-
-.main-nav__list a {
-    color: #000000;
-    text-decoration: none;
   }
 
 .main-nav__toggle {
@@ -21,12 +30,93 @@
     width: 60px;
     height: 60px;
     border: none;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 2;
 
     @media (min-width:$tablet-width) {
       display: none;
     }
+ }
 
-    @media (min-width:$desktop-width) {
+ .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: #81B3D2;
+    box-shadow: 0 10px 0 0 #81B3D2, 0 20px 0 0 #81B3D2;
+ }
+
+ .main-nav--closed .main-nav__toggle:active::before {
+    background-color: rgba(129, 179, 210, 0.3);
+    box-shadow:
+    0 10px 0 0 rgba(129, 179, 210, 0.3),
+    0 20px 0 0 rgba(129, 179, 210, 0.3);
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+    background-color: rgba(129, 179, 210, 0.6);
+    box-shadow:
+    0 10px 0 0 rgba(129, 179, 210, 0.6),
+    0 20px 0 0 rgba(129, 179, 210, 0.6);
+}
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 215px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    @media (min-width:$tablet-width) {
       display: none;
     }
- }
+}
+
+.main-nav--nojs .main-nav__toggle {
+    display: none;
+}
+
+.main-nav--nojs .site-list__item {
+    display: block;
+}
+
