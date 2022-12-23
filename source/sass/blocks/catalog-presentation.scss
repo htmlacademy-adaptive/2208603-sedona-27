@@ -18,4 +18,19 @@
 .catalog-presentation__preview {
   display: block;
   margin: 0 auto;
+
+  @media (min-width:$tablet-width) {
+    min-height: 500px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 648px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 800px;
+  }
 }
+
+

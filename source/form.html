@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -26,6 +30,8 @@
               Фото и видео
             </a>
           </li>
+          <li class="site-list__item">
+          </li>
           <li class="site-list__item site-list__item--current">
             <a href="form.html">
               Форма отзыва
@@ -45,8 +51,11 @@
       <section class="hero-block">
         <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Седона</h2>
-          <img class="hero-block__image" src="img/content/hero.svg" width="229" height="39" alt="Седона.">
-        </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/hero-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/content/hero-tablet.svg">
+            <img class="hero-block__image" src="img/content/hero-mobile.svg" width="229" height="39" alt="Седона.">
+          </picture>
       </section>
       <section class="form-page-intro">
         <div class="form-page-intro__wrapper">

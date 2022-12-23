@@ -4,14 +4,25 @@
   color: #000000;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .main-header__logo {
   display: block;
   text-align: center;
   height: 96px;
+  width: 185px;
+  margin: 0 auto;
   margin-bottom: -96px;
   z-index: 2;
+
+  @media (min-width:$tablet-width) {
+    left: 291px;
+  }
+
+  @media (min-width:$desktop-width) {
+    left: 507px;
+  }
 }
 
 .main-header__logo img {

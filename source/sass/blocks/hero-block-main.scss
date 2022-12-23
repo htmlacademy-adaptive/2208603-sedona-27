@@ -1,9 +1,22 @@
 .hero-block-main {
-  background-image: url(../img/content/main-hero-background.jpg);
+  position: relative;
+  background-image: url(/img/content/main-hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   min-height: 389px;
   background-color: #f2f2f2;
   background-size: cover;
+
+  @media (min-width:$tablet-width) {
+    background-image: url(/img/content/main-hero-bg-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(/img/content/main-hero-bg-tablet@2x.jpg);
+    }
+  }
+
+  @media (min-width:$desktop-width) {
+    background-image: url(/img/content/main-hero-bg-desktop.jpg);
+  }
 }
 
 .hero-block-main__logo {
@@ -30,4 +43,16 @@
   padding: 16px 18px;
   padding-top: 3px;
   text-align: center;
+}
+
+.hero-block-main:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  left: 0;
+  background-image: url(/img/decor/hero-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }

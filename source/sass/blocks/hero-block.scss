@@ -1,9 +1,17 @@
 .hero-block {
-  background-image: url(../img/content/hero-background.jpg);
+  background-image: url(/img/content/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   min-height: 158px;
   background-color: #f2f2f2;
   background-size: cover;
+
+  @media (min-width:$tablet-width) {
+    background-image: url(/img/content/hero-bg-tablet.jpg);
+  }
+
+  @media (min-width:$desktop-width) {
+    background-image: url(/img/content/hero-bg-desktop.jpg);
+  }
 }
 
 .hero-block__image {

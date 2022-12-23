@@ -18,9 +18,14 @@
 }
 
 .advantages__item {
+
   &--colored {
     background-color: #81b3d2;
     color: #ffffff;
+  }
+
+  &--grey {
+    background-color: #eeeeee;
   }
 
   @media (min-width:$tablet-width) {
@@ -34,6 +39,7 @@
 
 .advantages__item img {
   display: block;
+  width: 100%;
 }
 
 .advantages__item--img {
