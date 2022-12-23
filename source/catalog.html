@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -28,6 +32,8 @@
             </a>
           </li>
           <li class="site-list__item">
+          </li>
+          <li class="site-list__item">
             <a href="form.html">
               Форма отзыва
             </a>
@@ -46,7 +52,11 @@
       <section class="hero-block">
         <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Седона</h2>
-          <img class="hero-block__image" src="img/content/hero.svg" width="229" height="39" alt="Седона.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/hero-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/content/hero-tablet.svg">
+            <img class="hero-block__image" src="img/content/hero-mobile.svg" width="229" height="39" alt="Седона.">
+          </picture>
         </div>
       </section>
       <section class="catalog-intro">
@@ -60,8 +70,12 @@
           <h2 class="visually-hidden">Фотографии</h2>
           <ul class="catalog-pictures__list">
             <li class="catalog-pictures__item catalog-pictures__item--first">
-              <figure class="catalog-pictures__image">
-                <img src="img/content/gallery-sunset.jpg" alt="Неродные просторы." width="280" height="280">
+              <figure class="catalog-pictures__image .catalog-pictures__image--first">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/gallery-sunset-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/gallery-sunset-tablet.jpg">
+                  <img src="img/content/gallery-sunset-mobile.jpg" alt="Неродные просторы." width="280" height="280">
+                </picture>
                 <figcaption class="catalog-pictures__caption">Неродные просторы</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Борис</span>
@@ -72,7 +86,11 @@
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="img/content/gallery-plants.jpg" alt="Местная растительность." width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/gallery-plants-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/gallery-plants-tablet.jpg">
+                  <img src="img/content/gallery-plants-mobile.jpg" alt="Местная растительность." width="280" height="280">
+                </picture>
                 <figcaption class="catalog-pictures__caption">Местная растительность</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Сергей</span>
@@ -83,9 +101,13 @@
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="img/content/gallery-north.jpg" alt="Дорога на север." width="280" height="280">
-                <figcaption class="catalog-pictures__caption">Дорога на север</figcaption>
-              </figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/gallery-north-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/gallery-north-tablet.jpg">
+                  <img src="img/content/gallery-north-mobile.jpg" alt="Дорога на север." width="280" height="280">
+                  <figcaption class="catalog-pictures__caption">Дорога на север</figcaption>
+                </picture>
+                </figure>
               <span class="catalog-pictures__author">Автор фото: Петр</span>
               <button class="catalog-pictures__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
@@ -94,8 +116,12 @@
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
-                <img src="img/content/gallery-devils-bridge.jpg" alt="Мост дьявола." width="280" height="280">
-                <figcaption class="catalog-pictures__caption">Мост дьявола</figcaption>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/gallery-bridge-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/gallery-bridge-tablet.jpg">
+                  <img src="img/content/gallery-bridge-mobile.jpg" alt="Мост дьявола." width="280" height="280">
+                  <figcaption class="catalog-pictures__caption">Мост дьявола</figcaption>
+                </picture>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Антон</span>
               <button class="catalog-pictures__like-button" type="button">
@@ -110,7 +136,11 @@
         <div class="catalog-presentation__wrapper">
           <h2 class="catalog-presentation__title">Все еще сомневаетесь?</h2>
           <p class="catalog-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="catalog-presentation__preview" src="img/content/video-preview.jpg" width="280" height="177" alt="Видеопрезентация.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/video-preview-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/content/video-preview-tablet.jpg">
+            <img class="catalog-presentation__preview" src="img/content/video-preview-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
+          </picture>
         </div>
       </section>
     </main>

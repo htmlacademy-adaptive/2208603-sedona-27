@@ -12,9 +12,9 @@
   }
 
   @media (min-width:$desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
   }
+
 }
 
 .catalog-pictures__item {
@@ -43,6 +43,10 @@
 .catalog-pictures__image {
   display: block;
   margin: 0 auto;
+}
+
+.catalog-pictures img {
+  width: 100%;
 }
 
 .catalog-pictures__caption {
