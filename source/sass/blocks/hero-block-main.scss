@@ -1,6 +1,6 @@
 .hero-block-main {
   position: relative;
-  background-image: url(/img/content/main-hero-bg-mobile.jpg);
+  background-image: url(../img/content/main-hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   min-height: 389px;
   background-color: #f2f2f2;
@@ -8,6 +8,7 @@
 
   @media (min-width:$tablet-width) {
     background-image: url(/img/content/main-hero-bg-tablet.jpg);
+    min-height: 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(/img/content/main-hero-bg-tablet@2x.jpg);
@@ -26,23 +27,38 @@
   padding-bottom: 85px;
 }
 
+.hero-block-intro {
+  position: relative;
+}
+
 .hero-block-intro__slogan {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding: 32px 18px;
+  padding-top: 32px;
+  padding-bottom: 33px;
   text-align: center;
   min-width: 284px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 21px;
+    padding: 48px 126px 20px 124px;
+  }
 }
 
 .hero-block-intro__description {
   margin: 0;
   text-transform: uppercase;
-  padding: 16px 18px;
+  padding: 36px 18px;
   padding-top: 3px;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 55px;
+  }
 }
 
 .hero-block-main:before {
@@ -55,4 +71,21 @@
   background-image: url(/img/decor/hero-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero-block-intro:before {
+  content: "";
+  position: absolute;
+  top: 222px;
+  width: 100%;
+  height: 21px;
+  left: 0;
+  z-index: 2;
+  background-image: url(/img/decor/hero-intro-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width:$tablet-width) {
+    display: none;
+  }
 }
