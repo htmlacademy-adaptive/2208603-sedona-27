@@ -70,28 +70,40 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--real-town advantages__item--colored">
-              <h3 class="advantages__title">Настоящий городок</h3>
+              <h3 class="advantages__title advantages__title--first">Настоящий городок</h3>
               <span class="advantages__count"> — №1 — </span>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </li>
             <li class="advantages__item advantages__item--img">
               <picture>
+                <source type="image/webp" srcset="img/content/town-mobile.webp 1x, img/content/town-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/town-tablet.webp 1x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/town-desktop.webp 1x">
                 <source media="(min-width: 1200px)" srcset="img/content/town-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/content/town-tablet.jpg">
                 <img src="img/content/real-town.jpg" srcset="img/content/town-mobile@2x.jpg 2x" alt="Настоящий городок." width="320" height="260">
               </picture>
             </li>
-            <li class="advantages__item advantages__item--housing">
+            <li class="advantages__item advantages__item--amenities">
               <h3 class="advantages__title advantages__title--amenities">Жилье</h3>
               <p class="advantages__description advantages__description--amenities">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <svg class="advantages__icon advantages__icon--house" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-house"></use>
+              </svg>
             </li>
-            <li class="advantages__item advantages__item--food">
+            <li class="advantages__item advantages__item--amenities">
               <h3 class="advantages__title advantages__title--amenities">Еда</h3>
               <p class="advantages__description advantages__description--amenities">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <svg class="advantages__icon advantages__icon--burger" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
             </li>
-            <li class="advantages__item advantages__item--souvenirs">
+            <li class="advantages__item advantages__item--amenities">
               <h3 class="advantages__title advantages__title--amenities">Сувениры</h3>
-              <p class="advantages__description advantages__description--amenities">Не только китайского, но и местного производства!</p>
+              <p class="advantages__description advantages__description--amenities advantages__description--souvenirs">Не только китайского, но и местного производства!</p>
+              <svg class="advantages__icon advantages__icon--gift" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
+              </svg>
             </li>
             <li class="advantages__item advantages__item--devils-bridge advantages__item--colored">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
@@ -106,19 +118,19 @@
               </picture>
             </li>
             <li class="advantages__item advantages__item--small-area advantages__item--grey">
-              <h3 class="advantages__title">Небольшая площадь</h3>
+              <h3 class="advantages__title advantages__title--grey">Небольшая площадь</h3>
               <span class="advantages__count"> — №3 — </span>
-              <p class="advantages__description">Все интересные места находятся очень близко</p>
+              <p class="advantages__description advantages__description--grey">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages__item advantages__item--beautiful-road advantages__item--grey">
-              <h3 class="advantages__title">Красивая дорога</h3>
+              <h3 class="advantages__title advantages__title--grey">Красивая дорога</h3>
               <span class="advantages__count"> — №4 — </span>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages__description advantages__description--grey">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item advantages__item--few-tourists advantages__item--grey">
-              <h3 class="advantages__title">Мало туристов</h3>
+              <h3 class="advantages__title advantages__title--grey">Мало туристов</h3>
               <span class="advantages__count"> — №5 — </span>
-              <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+              <p class="advantages__description advantages__description--grey">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </div>
@@ -126,7 +138,7 @@
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel-search__search-button button" href="form.html">Найти гостиницу</a>
         </div>
       </section>
@@ -149,23 +161,36 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Контакте</span>
+                <svg class="social__link--icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Телеграме</span>
+                <svg class="social__link--icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-tg"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Ютубе</span>
+                <svg class="social__link--icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-yt"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
-          <p class="main-footer__copyright-description">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__description">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__icon" width="27" height="35">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

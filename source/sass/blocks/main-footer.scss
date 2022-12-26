@@ -1,7 +1,26 @@
 .main-footer {
-  padding: 39px 0 23px 0;
+  padding: 33px 0 23px 0;
   background-color: #ffffff;
   text-align: center;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:$tablet-width) {
+    flex-direction: row;
+    gap: 97px;
+    justify-content: space-between;
+    padding-right: 76px;
+    padding-left: 45px;
+    align-content: center;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-right: 136px;
+    padding-left: 104px;
+  }
 }
 
 .main-footer__hashtag {
@@ -10,10 +29,5 @@
   font-size: 21px;
   line-height: 26px;
   padding-bottom: 33px;
-  margin: 0 auto;
+  margin: 0;
 }
-
-.main-footer__copyright-description {
-  text-transform: uppercase;
-}
-
