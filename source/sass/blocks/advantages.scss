@@ -26,6 +26,7 @@
 
   @media (min-width:$tablet-width) {
     width: 256px;
+    min-height: 256px;
   }
 
   @media (min-width:$desktop-width) {
@@ -63,24 +64,39 @@
   text-align: center;
   text-transform: uppercase;
   padding: 38px 0 12px 0;
-  &--amenities {
-    text-align: start;
-    padding: 33px 0 16px 65px;
-  }
-  &--first {
-    padding-top: 49px;
-  }
-  &--grey {
-    padding-top: 24px;
-  }
 
   @media (min-width:$tablet-width) {
     font-size: 21px;
     padding: 53px 20px 13px 20px;
+  }
 
-    &--amenities {
+  @media (min-width:$desktop-width) {
+    padding: 53px 100px 13px 100px;
+  }
+
+  &--amenities {
+    text-align: start;
+    padding: 33px 0 16px 65px;
+
+    @media (min-width:$tablet-width) {
       padding-top: 153px;
       text-align: center;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 165px 63px 16px 63px;
+    }
+  }
+
+  &--first {
+    padding-top: 49px;
+  }
+
+  &--grey {
+    padding-top: 24px;
+
+    @media (min-width:$desktop-width) {
+      padding-top: 56px;
     }
   }
 }
@@ -90,23 +106,30 @@
   text-align: center;
   padding: 17px 18px 36px 18px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 22px;
+  }
+
   &--amenities {
     text-align: start;
     padding: 0 20px 0 65px;
+
+    @media (min-width:$tablet-width) {
+      text-align: center;
+      padding: 10px 44px 0 44px;
+      margin-top: -11px;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 19px 58px 0 58px;
+    }
   }
+
   &--grey {
     padding-bottom: 24px;
     padding-right: 20px;
     padding-left: 20px;
-  }
-
-  @media (min-width:$tablet-width) {
-    padding-top: 22px;
-
-    &--amenities {
-      text-align: center;
-      padding: 10px 44px 0 44px;
-    }
   }
 }
 
@@ -119,8 +142,21 @@
   position: absolute;
   top: 23px;
   left: 18px;
+
+  @media (min-width:$tablet-width) {
+    width: 77px;
+    height: 72px;
+    top: 56px;
+    left: 89px;
+  }
+
+  @media (min-width:$desktop-width) {
+    top: 66px;
+    left: 161px;
+  }
 }
 
 .advantages__description--souvenirs {
    padding-bottom: 46px;
 }
+

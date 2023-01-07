@@ -2,6 +2,10 @@
   padding: 33px 0 23px 0;
   background-color: #ffffff;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 31px;
+  }
 }
 
 .main-footer__wrapper {
@@ -13,7 +17,7 @@
     gap: 97px;
     justify-content: space-between;
     padding-right: 76px;
-    padding-left: 45px;
+    padding-left: 60px;
     align-content: center;
   }
 
@@ -30,4 +34,13 @@
   line-height: 26px;
   padding-bottom: 33px;
   margin: 0;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 11px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 12px;
+    padding-left: 17px;
+  }
 }
