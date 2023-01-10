@@ -11,6 +11,12 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 10px;
+  }
 }
 
 .hotel-search__description {
@@ -20,8 +26,22 @@
   line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 9px;
+
+  @media (min-width:$tablet-width) {
+    padding: 31px 160px 58px 160px;
+    margin: 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 31px 380px 62px 380px;
+  }
 }
 
 .hotel-search__search-button {
   padding: 16px 49px;
+  width: 284px;
+
+  @media (min-width:$tablet-width) {
+    width: 458px;
+  }
 }

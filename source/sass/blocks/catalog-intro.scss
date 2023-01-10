@@ -6,12 +6,14 @@
   text-align: center;
   padding-top: 37px;
   text-transform: uppercase;
+
+  @media (min-width)
 }
 
 .catalog-intro__description {
   margin: 0 auto;
-  padding: 26px 20px;
-  padding-bottom: 17px;
+  padding: 25px 20px;
+  padding-bottom: 36px;
   text-align: center;
   text-transform: uppercase;
 }
