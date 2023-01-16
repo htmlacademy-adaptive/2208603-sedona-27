@@ -79,6 +79,7 @@
     padding: 33px 0 16px 65px;
 
     @media (min-width:$tablet-width) {
+      padding: 0;
       padding-top: 153px;
       text-align: center;
     }
@@ -95,20 +96,29 @@
   &--grey {
     padding-top: 24px;
 
+    @media (min-width:$tablet-width) {
+      padding: 43px 50px 0;
+    }
+
     @media (min-width:$desktop-width) {
-      padding-top: 56px;
+      padding: 54px 122px 0;
     }
   }
 }
 
+
 .advantages__description {
   margin: 0;
   text-align: center;
-  padding: 17px 18px 36px 18px;
+  padding: 17px 18px 36px;
   text-transform: uppercase;
 
   @media (min-width:$tablet-width) {
     padding-top: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 17px 56px 36px;
   }
 
   &--amenities {
@@ -117,7 +127,7 @@
 
     @media (min-width:$tablet-width) {
       text-align: center;
-      padding: 10px 44px 0 44px;
+      padding: 35px 44px 0;
       margin-top: -11px;
     }
 
@@ -128,8 +138,8 @@
 
   &--grey {
     padding-bottom: 24px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 

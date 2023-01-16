@@ -14,7 +14,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/content/main-logo.svg" width="185" height="96"
         alt="Логотип Седоны.">
       </a>
@@ -66,8 +66,8 @@
         </div>
       </section>
       <form class="review-form" action="https://echo.htmlacademy.ru/courses" name="form-group" method="get">
-      <fieldset class="review-form__group">
-        <legend class="review-form__legend">Представьтесь:</legend>
+      <fieldset class="review-form__group review-form__group--first">
+        <legend class="review-form__legend review-form__legend--first">Представьтесь:</legend>
           <label class="review-form__label" for="first-name-input">Имя*:</label>
           <input class="review-form__name-input" type="text" id="first-name-input" name="first-name" value="Пётр" required>
           <label class="review-form__label" for="last-name-input">Фамилия*:</label>
@@ -75,36 +75,63 @@
           <label class="review-form__label" for="patronymic-input">Отчество:</label>
           <input class="review-form__name-input" type="text" id="patronymic-input" name="patronymic" value="Викторович">
       </fieldset>
-      <fieldset class="review-form__group">
-        <legend class="review-form__legend">Контактная информация:</legend>
+      <fieldset class="review-form__group review-form__group--second">
+        <legend class="review-form__legend review-form__legend--second">Контактная информация:</legend>
           <label class="review-form__label" for="phone-input">Контактный телефон*:</label>
-          <input class="review-form__input" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
+          <input class="review-form__input review-form__input--phone" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
+          <svg class="review-form__input--phone-icon" width="18" height="18">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
           <label class="review-form__label" for="email-input">Электронная почта*:</label>
-          <input class="review-form__input" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
+          <input class="review-form__input review-form__input--email" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
+          <svg class="review-form__input--email-icon" width="18" height="18">
+            <use xlink:href="img/sprite.svg#icon-email"></use>
+          </svg>
       </fieldset>
       <fieldset class="review-form__group review-form__group--wide">
-        <legend class="review-form__legend">Ваше общее впечатление:</legend>
-          <label class="review-form__label--control" for="positive-impression">Скорее положительное</label>
-          <input class="review-form__button visually-hidden" type="radio" id="positive-impression" name="positive-impression" checked>
-          <label class="review-form__label--control" for="negative-impression">Скорее отрицательное</label>
-          <input class="review-form__button visually-hidden" type="radio" id="negative-impression" name="negative-impression">
-          <label class="review-form__label--control" for="uncertain">Затрудняюсь ответить</label>
-          <input class="review-form__button visually-hidden" type="radio" id="uncertain" name="uncertain">
+        <legend class="review-form__legend review-form__legend--wide">Ваше общее впечатление:</legend>
+          <label class="review-form__label--control control" for="positive-impression">
+            <input class="control__input visually-hidden" type="radio" id="positive-impression" name="positive-impression" checked>
+            <span class="control__mark"></span>
+            <span class="control__label">Скорее положительное</span>
+          </label>
+          <label class="review-form__label--control control" for="negative-impression">
+            <input class="control__input visually-hidden" type="radio" id="negative-impression" name="negative-impression">
+            <span class="control__mark"></span>
+            <span class="control__label">Скорее отрицательное</span>
+          </label>
+          <label class="review-form__label--control control" for="uncertain">
+            <input class="control__input visually-hidden" type="radio" id="uncertain" name="uncertain">
+            <span class="control__mark"></span>
+            <span class="control__label">Затрудняюсь ответить</span>
+          </label>
       </fieldset>
       <fieldset class="review-form__group review-form__group--wide">
-        <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-          <label class="review-form__label--control" for="checkbox-devils-bridge">Мост Дьявола</label>
-          <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-devils-bridge" name="checkbox-devils-bridge" checked>
-          <label class="review-form__label--control" for="checkbox-bell-mountain">Гора-Колокол</label>
-          <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-bell-mountain" name="checkbox-bell-mountain" checked>
-          <label class="review-form__label--control" for="checkbox-slide-park">Слайд-парк</label>
-          <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-slide-park" name="checkbox-slide-park" checked>
-          <label class="review-form__label--control" for="checkbox-red-rocks">Красные скалы</label>
-          <input class="review-form__checkbox visually-hidden" type="checkbox" id="checkbox-red-rocks" name="checkbox-red-rocks">
+        <legend class="review-form__legend review-form__legend--wide">Посещенные достопримечательности:</legend>
+          <label class="review-form__label--control control" for="checkbox-devils-bridge">
+            <input class="control__input visually-hidden" type="checkbox" id="checkbox-devils-bridge" name="checkbox-devils-bridge" checked>
+            <span class="control__mark control__mark--box"></span>
+            <span class="control__label">Мост Дьявола</span>
+          </label>
+          <label class="review-form__label--control control" for="checkbox-bell-mountain">
+            <input class="control__input visually-hidden" type="checkbox" id="checkbox-bell-mountain" name="checkbox-bell-mountain" checked>
+            <span class="control__mark control__mark--box"></span>
+            <span class="control__label">Гора-Колокол</span>
+          </label>
+          <label class="review-form__label--control control" for="checkbox-slide-park">
+            <input class="control__input visually-hidden" type="checkbox" id="checkbox-slide-park" name="checkbox-slide-park" checked>
+            <span class="control__mark control__mark--box"></span>
+            <span class="control__label">Слайд-парк</span>
+          </label>
+          <label class="review-form__label--control control" for="checkbox-red-rocks">
+            <input class="control__input visually-hidden" type="checkbox" id="checkbox-red-rocks" name="checkbox-red-rocks">
+            <span class="control__mark control__mark--box"></span>
+            <span class="control__label">Красные скалы</span>
+          </label>
       </fieldset>
-      <fieldset class="review-form__group review-form__group--wide">
+      <fieldset class="review-form__group review-form__group--wide review-form__group--text">
         <legend class="review-form__legend">Опишите свои эмоции:</legend>
-          <textarea class="review-form__text-input" name="review-input" placeholder="Опишите подробно все свои восторги" rows="8"></textarea>
+          <textarea class="review-form__text-input" name="review-input" placeholder="Опишите подробно все свои восторги"></textarea>
           <button class="review-form__submit-button button" type="submit">Отправить отзыв</button>
           <span class="review-form__caption">* — обязательные поля</span>
       </fieldset>
@@ -155,6 +182,19 @@
         </div>
       </div>
     </footer>
+    <div class="modal__container modal__container--fail modal__container--close">
+      <div class="modal__window modal__window--fail">
+        <h2 class="modal__title modal__title--fail">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--fail button" type="button">ОК</button>
+      </div>
+    </div>
+    <div class="modal__container modal__container--success modal__container--close">
+      <div class="modal__window modal__window--success">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      </div>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/content/main-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -81,10 +81,15 @@
                 <figcaption class="catalog-pictures__caption">Неродные просторы</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Борис</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">1350</span>
+              <div class="catalog-pictures__like">
+                <button class="catalog-pictures__like--button" type="button">
+                  <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Мне нравится</span>
+                </button>
+                <span class="catalog-pictures__like--count">1350</span>
+              </div>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
@@ -96,12 +101,17 @@
                 <figcaption class="catalog-pictures__caption">Местная растительность</figcaption>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Сергей</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">143</span>
+              <div class="catalog-pictures__like">
+                <button class="catalog-pictures__like--button" type="button">
+                  <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Мне нравится</span>
+                </button>
+                <span class="catalog-pictures__like--count">143</span>
+              </div>
             </li>
-            <li class="catalog-pictures__item">
+            <li class="catalog-pictures__item catalog-pictures__item--gray">
               <figure class="catalog-pictures__image">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/content/gallery-north-desktop.jpg">
@@ -111,10 +121,15 @@
                 </picture>
                 </figure>
               <span class="catalog-pictures__author">Автор фото: Петр</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">96</span>
+              <div class="catalog-pictures__like">
+                <button class="catalog-pictures__like--button" type="button">
+                  <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Мне нравится</span>
+                </button>
+                <span class="catalog-pictures__like--count">96</span>
+              </div>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
@@ -126,10 +141,15 @@
                 </picture>
               </figure>
               <span class="catalog-pictures__author">Автор фото: Антон</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">254</span>
+              <div class="catalog-pictures__like">
+                <button class="catalog-pictures__like--button" type="button">
+                  <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Мне нравится</span>
+                </button>
+                <span class="catalog-pictures__like--count">254</span>
+              </div>>
             </li>
           </ul>
         </div>
