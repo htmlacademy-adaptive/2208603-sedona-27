@@ -14,12 +14,10 @@
 
   &:hover {
     color: #81B3D2;
-    stroke: #81B3D2;
   }
 
   &:active {
     color: #B3B3B3;
-    stroke: #B3B3B3;
   }
 
   @media (min-width:$tablet-width) {
@@ -31,3 +29,18 @@
   }
 }
 
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #81B3D2;
+ }
+
+ &:active {
+  color: #B3B3B3;
+}
+}

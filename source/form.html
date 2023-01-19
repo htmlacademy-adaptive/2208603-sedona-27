@@ -78,15 +78,19 @@
       <fieldset class="review-form__group review-form__group--second">
         <legend class="review-form__legend review-form__legend--second">Контактная информация:</legend>
           <label class="review-form__label" for="phone-input">Контактный телефон*:</label>
-          <input class="review-form__input review-form__input--phone" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
-          <svg class="review-form__input--phone-icon" width="18" height="18">
-            <use xlink:href="img/sprite.svg#icon-phone"></use>
-          </svg>
+          <div class="review-form__wrapper">
+            <input class="review-form__input review-form__input--phone" type="text" id="phone-input" name="phone" placeholder="Введите телефон" required>
+            <svg class="review-form__input--icon" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
           <label class="review-form__label" for="email-input">Электронная почта*:</label>
-          <input class="review-form__input review-form__input--email" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
-          <svg class="review-form__input--email-icon" width="18" height="18">
-            <use xlink:href="img/sprite.svg#icon-email"></use>
-          </svg>
+          <div class="review-form__wrapper">
+            <input class="review-form__input review-form__input--email" type="text" id="email-input" name="email" placeholder="Введите e-mail" required>
+            <svg class="review-form__input--icon" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </div>
       </fieldset>
       <fieldset class="review-form__group review-form__group--wide">
         <legend class="review-form__legend review-form__legend--wide">Ваше общее впечатление:</legend>
@@ -106,31 +110,31 @@
             <span class="control__label">Затрудняюсь ответить</span>
           </label>
       </fieldset>
-      <fieldset class="review-form__group review-form__group--wide">
+      <fieldset class="review-form__group review-form__group--wide review-form__group--check">
         <legend class="review-form__legend review-form__legend--wide">Посещенные достопримечательности:</legend>
-          <label class="review-form__label--control control" for="checkbox-devils-bridge">
+          <label class="review-form__label--control control review-form__label--check" for="checkbox-devils-bridge">
             <input class="control__input visually-hidden" type="checkbox" id="checkbox-devils-bridge" name="checkbox-devils-bridge" checked>
             <span class="control__mark control__mark--box"></span>
             <span class="control__label">Мост Дьявола</span>
           </label>
-          <label class="review-form__label--control control" for="checkbox-bell-mountain">
+          <label class="review-form__label--control control review-form__label--check" for="checkbox-bell-mountain">
             <input class="control__input visually-hidden" type="checkbox" id="checkbox-bell-mountain" name="checkbox-bell-mountain" checked>
             <span class="control__mark control__mark--box"></span>
             <span class="control__label">Гора-Колокол</span>
           </label>
-          <label class="review-form__label--control control" for="checkbox-slide-park">
+          <label class="review-form__label--control control review-form__label--check" for="checkbox-slide-park">
             <input class="control__input visually-hidden" type="checkbox" id="checkbox-slide-park" name="checkbox-slide-park" checked>
             <span class="control__mark control__mark--box"></span>
             <span class="control__label">Слайд-парк</span>
           </label>
-          <label class="review-form__label--control control" for="checkbox-red-rocks">
+          <label class="review-form__label--control control review-form__label--check" for="checkbox-red-rocks">
             <input class="control__input visually-hidden" type="checkbox" id="checkbox-red-rocks" name="checkbox-red-rocks">
             <span class="control__mark control__mark--box"></span>
             <span class="control__label">Красные скалы</span>
           </label>
       </fieldset>
-      <fieldset class="review-form__group review-form__group--wide review-form__group--text">
-        <legend class="review-form__legend">Опишите свои эмоции:</legend>
+      <fieldset class="review-form__group review-form__group--text">
+        <legend class="review-form__legend review-form__legend--text">Опишите свои эмоции:</legend>
           <textarea class="review-form__text-input" name="review-input" placeholder="Опишите подробно все свои восторги"></textarea>
           <button class="review-form__submit-button button" type="submit">Отправить отзыв</button>
           <span class="review-form__caption">* — обязательные поля</span>
@@ -173,8 +177,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__description">Разработано</p>
             <svg class="copyright__icon" width="27" height="35">
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>

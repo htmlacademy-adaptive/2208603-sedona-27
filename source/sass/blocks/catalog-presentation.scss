@@ -12,7 +12,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    margin-top: 64px;
+    margin-top: 47px;
   }
 }
 
@@ -35,19 +35,34 @@
 .catalog-presentation__preview {
   display: block;
   margin: 0 auto;
+  min-height: 177px;
+  width: 280px;
 
   @media (min-width:$tablet-width) {
     min-height: 500px;
     width: 648px;
-    margin-bottom: 50px;
   }
 
   @media (min-width:$desktop-width) {
     width: 800px;
-    margin-bottom: 92px;
   }
 }
 
 .catalog-presentation {
   margin-bottom: -4px;
+}
+
+.catalog-presentation__video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.catalog-presentation__button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
 }
