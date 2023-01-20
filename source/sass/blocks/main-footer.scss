@@ -4,7 +4,11 @@
   text-align: center;
 
   @media (min-width:$tablet-width) {
-    padding-top: 31px;
+    padding-top: 16px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 17px;
   }
 }
 
@@ -16,13 +20,13 @@
     flex-direction: row;
     gap: 97px;
     justify-content: space-between;
-    padding-right: 76px;
+    padding-right: 60px;
     padding-left: 60px;
     align-content: center;
   }
 
   @media (min-width:$desktop-width) {
-    padding-right: 136px;
+    padding-right: 120px;
     padding-left: 104px;
   }
 }
@@ -42,5 +46,15 @@
   @media (min-width:$desktop-width) {
     padding-top: 12px;
     padding-left: 17px;
+  }
+}
+
+.main-footer__social {
+  @media (min-width:$tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-right: 21px;
   }
 }

@@ -10,10 +10,11 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/content/main-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -77,13 +78,20 @@
                   <source media="(min-width: 768px)" srcset="img/content/gallery-sunset-tablet.jpg">
                   <img src="img/content/gallery-sunset-mobile.jpg" alt="Неродные просторы." width="280" height="280">
                 </picture>
-                <figcaption class="catalog-pictures__caption">Неродные просторы</figcaption>
+                <figcaption class="catalog-pictures__caption catalog-pictures__caption--first">
+                  <p class="catalog-pictures__name">Неродные просторы</p>
+                  <span class="catalog-pictures__author">Автор фото: Борис</span>
+                  <div class="catalog-pictures__like">
+                    <button class="catalog-pictures__like--button" type="button">
+                      <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                      </svg>
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="catalog-pictures__like--count">1350</span>
+                  </div>
+                </figcaption>
               </figure>
-              <span class="catalog-pictures__author">Автор фото: Борис</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">1350</span>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
@@ -92,28 +100,42 @@
                   <source media="(min-width: 768px)" srcset="img/content/gallery-plants-tablet.jpg">
                   <img src="img/content/gallery-plants-mobile.jpg" alt="Местная растительность." width="280" height="280">
                 </picture>
-                <figcaption class="catalog-pictures__caption">Местная растительность</figcaption>
+                <figcaption class="catalog-pictures__caption">
+                  <p class="catalog-pictures__name">Местная растительность</p>
+                  <span class="catalog-pictures__author">Автор фото: Сергей</span>
+                  <div class="catalog-pictures__like">
+                    <button class="catalog-pictures__like--button" type="button">
+                      <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                      </svg>
+                      <span class="visually-hidden">Мне нравится</span>
+                    </button>
+                    <span class="catalog-pictures__like--count">143</span>
+                  </div>
+                </figcaption>
               </figure>
-              <span class="catalog-pictures__author">Автор фото: Сергей</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">143</span>
             </li>
-            <li class="catalog-pictures__item">
+            <li class="catalog-pictures__item catalog-pictures__item--gray">
               <figure class="catalog-pictures__image">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/content/gallery-north-desktop.jpg">
                   <source media="(min-width: 768px)" srcset="img/content/gallery-north-tablet.jpg">
                   <img src="img/content/gallery-north-mobile.jpg" alt="Дорога на север." width="280" height="280">
-                  <figcaption class="catalog-pictures__caption">Дорога на север</figcaption>
+                  <figcaption class="catalog-pictures__caption">
+                    <p class="catalog-pictures__name">Дорога на север</p>
+                    <span class="catalog-pictures__author">Автор фото: Петр</span>
+                    <div class="catalog-pictures__like">
+                      <button class="catalog-pictures__like--button" type="button">
+                        <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="visually-hidden">Мне нравится</span>
+                      </button>
+                      <span class="catalog-pictures__like--count">96</span>
+                    </div>
+                  </figcaption>
                 </picture>
                 </figure>
-              <span class="catalog-pictures__author">Автор фото: Петр</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">96</span>
             </li>
             <li class="catalog-pictures__item">
               <figure class="catalog-pictures__image">
@@ -121,14 +143,21 @@
                   <source media="(min-width: 1200px)" srcset="img/content/gallery-bridge-desktop.jpg">
                   <source media="(min-width: 768px)" srcset="img/content/gallery-bridge-tablet.jpg">
                   <img src="img/content/gallery-bridge-mobile.jpg" alt="Мост дьявола." width="280" height="280">
-                  <figcaption class="catalog-pictures__caption">Мост дьявола</figcaption>
+                  <figcaption class="catalog-pictures__caption">
+                    <p class="catalog-pictures__name">Мост дьявола</p>
+                    <span class="catalog-pictures__author">Автор фото: Антон</span>
+                    <div class="catalog-pictures__like">
+                      <button class="catalog-pictures__like--button" type="button">
+                        <svg class="catalog-pictures__like--icon" width="23" height="21" aria-label="Поставить лайк">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="visually-hidden">Мне нравится</span>
+                      </button>
+                      <span class="catalog-pictures__like--count">254</span>
+                    </div>
+                  </figcaption>
                 </picture>
               </figure>
-              <span class="catalog-pictures__author">Автор фото: Антон</span>
-              <button class="catalog-pictures__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="catalog-pictures__like-count">254</span>
             </li>
           </ul>
         </div>
@@ -137,11 +166,18 @@
         <div class="catalog-presentation__wrapper">
           <h2 class="catalog-presentation__title">Все еще сомневаетесь?</h2>
           <p class="catalog-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/content/video-preview-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/content/video-preview-tablet.jpg">
-            <img class="catalog-presentation__preview" src="img/content/video-preview-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
-          </picture>
+          <div class="catalog-presentation__video">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/video-preview-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/content/video-preview-tablet.jpg">
+              <img class="catalog-presentation__preview" src="img/content/video-preview-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
+            </picture>
+            <button class="catalog-presentation__button">
+              <svg class="catalog-presentation__icon" width="48" height="54">
+                <use xlink:href="img/sprite.svg#icon-video"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -181,8 +217,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__description">Разработано</p>
             <svg class="copyright__icon" width="27" height="35">
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>

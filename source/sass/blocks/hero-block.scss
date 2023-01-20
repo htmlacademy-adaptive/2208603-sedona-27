@@ -1,30 +1,32 @@
 .hero-block {
+  position: relative;
   background-image: url(../img/content/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   min-height: 158px;
+  padding-top: 51px;
   background-color: #f2f2f2;
   background-size: cover;
 
   @media (min-width:$tablet-width) {
     background-image: url(../img/content/hero-bg-tablet.jpg);
     min-height: 290px;
+    padding-top: 96px;
   }
 
   @media (min-width:$desktop-width) {
     background-image: url(../img/content/hero-bg-desktop.jpg);
+    padding-top: 104px;
+    min-height: 301px;
   }
 }
 
 .hero-block__image {
   margin: 0 auto;
   display: block;
-  padding: 50px 19px;
-  padding-bottom: 68px;
 
   @media (min-width:$tablet-width) {
     width: 457px;
     height: 77px;
-    padding-top: 95px;
   }
 }
 
@@ -32,7 +34,7 @@
 .hero-block:before {
   content: "";
   position: absolute;
-  top: 289px;
+  bottom: 0;
   width: 100%;
   height: 57px;
   left: 0;
