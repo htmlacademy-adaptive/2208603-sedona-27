@@ -86,7 +86,7 @@
       width: 224px;
     }
     @media (min-width:$desktop-width) {
-      width: 172px;
+      width: 184px;
     }
   }
 }
@@ -128,7 +128,8 @@
       padding: 23px 144px;
     }
     @media (min-width:$desktop-width) {
-      padding: 52px 144px 27px;
+      padding: 52px 144px 53px;
+      justify-content: space-around;
     }
   }
 
