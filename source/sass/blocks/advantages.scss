@@ -26,10 +26,48 @@
 
   @media (min-width:$tablet-width) {
     width: 256px;
+    min-height: 256px;
   }
 
   @media (min-width:$desktop-width) {
     width: 400px;
+  }
+
+  &:nth-child(1) {
+    order: 1;
+  }
+  &:nth-child(2) {
+    order: 2;
+  }
+  &:nth-child(3) {
+    order: 3;
+  }
+  &:nth-child(4) {
+    order: 4;
+  }
+  &:nth-child(5) {
+    order: 5;
+  }
+  &:nth-child(6) {
+    order: 6;
+    @media (min-width:$tablet-width) {
+      order: 7;
+    }
+  }
+  &:nth-child(7) {
+    order: 7;
+    @media (min-width:$tablet-width) {
+      order: 6;
+    }
+  }
+  &:nth-child(8) {
+    order: 8;
+  }
+  &:nth-child(9) {
+    order: 9;
+  }
+  &:nth-child(10) {
+    order: 10;
   }
 }
 
@@ -63,50 +101,82 @@
   text-align: center;
   text-transform: uppercase;
   padding: 38px 0 12px 0;
-  &--amenities {
-    text-align: start;
-    padding: 33px 0 16px 65px;
-  }
-  &--first {
-    padding-top: 49px;
-  }
-  &--grey {
-    padding-top: 24px;
-  }
 
   @media (min-width:$tablet-width) {
     font-size: 21px;
     padding: 53px 20px 13px 20px;
+  }
 
-    &--amenities {
+  @media (min-width:$desktop-width) {
+    padding: 53px 100px 13px 100px;
+  }
+
+  &--amenities {
+    text-align: start;
+    padding: 33px 0 16px 65px;
+
+    @media (min-width:$tablet-width) {
+      padding: 0;
       padding-top: 153px;
       text-align: center;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 165px 63px 16px 63px;
+    }
+  }
+
+  &--first {
+    padding-top: 49px;
+  }
+
+  &--grey {
+    padding-top: 24px;
+
+    @media (min-width:$tablet-width) {
+      padding: 43px 50px 0;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 54px 122px 0;
     }
   }
 }
 
+
 .advantages__description {
   margin: 0;
   text-align: center;
-  padding: 17px 18px 36px 18px;
+  padding: 17px 18px 36px;
   text-transform: uppercase;
-  &--amenities {
-    text-align: start;
-    padding: 0 20px 0 65px;
-  }
-  &--grey {
-    padding-bottom: 24px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 
   @media (min-width:$tablet-width) {
     padding-top: 22px;
+  }
 
-    &--amenities {
+  @media (min-width:$desktop-width) {
+    padding: 17px 56px 36px;
+  }
+
+  &--amenities {
+    text-align: start;
+    padding: 0 20px 0 65px;
+
+    @media (min-width:$tablet-width) {
       text-align: center;
-      padding: 10px 44px 0 44px;
+      padding: 35px 44px 0;
+      margin-top: -11px;
     }
+
+    @media (min-width:$desktop-width) {
+      padding: 19px 58px 0 58px;
+    }
+  }
+
+  &--grey {
+    padding-bottom: 24px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -119,8 +189,21 @@
   position: absolute;
   top: 23px;
   left: 18px;
+
+  @media (min-width:$tablet-width) {
+    width: 77px;
+    height: 72px;
+    top: 56px;
+    left: 89px;
+  }
+
+  @media (min-width:$desktop-width) {
+    top: 66px;
+    left: 161px;
+  }
 }
 
 .advantages__description--souvenirs {
    padding-bottom: 46px;
 }
+

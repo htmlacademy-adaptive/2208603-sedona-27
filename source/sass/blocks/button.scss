@@ -9,4 +9,17 @@
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
+
+
+
+

@@ -5,6 +5,15 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 30px;
+    padding: 64px 0 24px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 113px 0 24px;
+  }
 }
 
 .form-page-intro__description {
@@ -12,4 +21,14 @@
   text-align: center;
   padding-bottom: 28px;
   text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width:$tablet-width) {
+    padding: 0 162px 78px;
+    border-bottom: none;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 8px 378px 44px;
+  }
 }

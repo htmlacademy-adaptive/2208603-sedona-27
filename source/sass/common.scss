@@ -6,7 +6,10 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.2);
+  z-index: 0;
 }
 
 html {
@@ -27,4 +30,12 @@ html {
 
 input {
   font-family: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

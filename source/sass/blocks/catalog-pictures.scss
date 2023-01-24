@@ -18,15 +18,23 @@
 }
 
 .catalog-pictures__item {
+  position: relative;
   border-bottom: 1px solid #e5e5e5;
-  padding: 24px 20px;
+  padding: 24px 20px 63px 20px;
 
   @media (min-width:$tablet-width) {
     width: 324px;
     padding: 0;
     border: none;
+    padding-bottom: 16px;
+    background-color: #f2f2f2;
+
     &--first {
-      width: 648px;
+      width: 100%;
+    }
+
+    &--gray {
+      background-color: #EAEAEA;
     }
   }
 
@@ -38,19 +46,112 @@
       width: 1200px;
     }
   }
+
+  &--first {
+    border-top: 1px solid #e5e5e5;
+  }
 }
 
 .catalog-pictures__image {
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 
 .catalog-pictures img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .catalog-pictures__caption {
+  padding-top: 16px;
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 20px;
+    padding-top: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 80px;
+    padding-left: 24px;
+    padding-top: 19px;
+
+    &--first {
+      padding-left: 21px;
+      padding-top: 22px;
+    }
+  }
+}
+
+.catalog-pictures__name {
   text-transform: uppercase;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
+
+.catalog-pictures__author {
+
+  @media (min-width:$desktop-width) {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+}
+
+.catalog-pictures__like {
+  position: absolute;
+  top: 68px;
+  left: -6px;
+
+  @media (min-width:$tablet-width) {
+    top: auto;
+    left: auto;
+    bottom: 9px;
+    right: 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    bottom: 26px;
+    right: 20px;
+  }
+
+  &--count {
+    font-weight: 700;
+    margin-left: 4px;
+
+    @media (min-width:$tablet-width) {
+      margin-left: 0;
+    }
+
+    @media (min-width:$desktop-width) {
+      color: #ffffff;
+    }
+  }
+
+  &--button {
+    border: none;
+    background-color: transparent;
+
+    @media (min-width:$desktop-width) {
+      fill: #ffffff;
+    }
+  }
+
+  &--icon {
+    color:rgba(0, 0, 0, 0.3);
+
+    @media (min-width:$desktop-width) {
+      color: #ffffff;
+    }
+  }
+}
+
 

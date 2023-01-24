@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -74,14 +76,14 @@
               <span class="advantages__count"> — №1 — </span>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </li>
-            <li class="advantages__item advantages__item--img">
+            <li class="advantages__item advantages__item--img advantages__item--img-town">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/town-desktop.webp 1x, img/content/town-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/town-tablet.webp 1x, img/content/town-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/town-mobile.webp 1x, img/content/town-mobile@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/town-tablet.webp 1x">
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/town-desktop.webp 1x">
-                <source media="(min-width: 1200px)" srcset="img/content/town-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/content/town-tablet.jpg">
-                <img src="img/content/real-town.jpg" srcset="img/content/town-mobile@2x.jpg 2x" alt="Настоящий городок." width="320" height="260">
+                <source media="(min-width: 1200px)" srcset="img/content/town-desktop.jpg 1x, img/content/town-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/town-tablet.jpg 1x, img/content/town-tablet@2x.jpg 2x">
+                <img src="img/content/town-mobile.jpg" srcset="img/content/town-mobile@2x.jpg 2x" alt="Настоящий городок." width="320" height="260">
               </picture>
             </li>
             <li class="advantages__item advantages__item--amenities">
@@ -110,7 +112,7 @@
               <span class="advantages__count"> — №2 — </span>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </li>
-            <li class="advantages__item advantages__item--img">
+            <li class="advantages__item advantages__item--img advantages__item--img-bridge">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/content/bridge-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/content/bridge-tablet.jpg">
@@ -185,8 +187,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__description">Разработано</p>
             <svg class="copyright__icon" width="27" height="35">
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>

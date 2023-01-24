@@ -2,6 +2,14 @@
   display: block;
   width: 100%;
   padding-top: 15px;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .location__map {

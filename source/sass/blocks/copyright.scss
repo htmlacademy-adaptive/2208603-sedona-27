@@ -11,5 +11,36 @@
   justify-content: center;
   gap: 12px;
   padding-top: 40px;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
+
+  @media (min-width:$tablet-width) {
+    padding-top: 7px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 7px;
+  }
 }
 
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #81B3D2;
+ }
+
+ &:active {
+  color: #B3B3B3;
+}
+}
