@@ -12,7 +12,7 @@
   line-height: 26px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
     padding-top: 10px;
@@ -27,12 +27,12 @@
   text-transform: uppercase;
   margin-bottom: 9px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 31px 160px 41px;
     margin: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 31px 380px 46px;
   }
 }
@@ -41,7 +41,7 @@
   padding: 16px 49px;
   width: 284px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 458px;
     display: inline-block;
   }

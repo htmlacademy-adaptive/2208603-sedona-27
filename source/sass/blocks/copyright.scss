@@ -13,18 +13,18 @@
   padding-top: 40px;
 
   &:hover {
-    color: #81B3D2;
+    color: #81b3d2;
   }
 
   &:active {
-    color: #B3B3B3;
+    color: #b3b3b3;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 7px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 7px;
   }
 }
@@ -37,10 +37,10 @@
   text-decoration: none;
 
   &:hover {
-    color: #81B3D2;
- }
+    color: #81b3d2;
+  }
 
- &:active {
-  color: #B3B3B3;
-}
+  &:active {
+    color: #b3b3b3;
+  }
 }

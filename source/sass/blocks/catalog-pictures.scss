@@ -5,16 +5,15 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 60px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
   }
-
 }
 
 .catalog-pictures__item {
@@ -22,7 +21,7 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 24px 20px 63px 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 324px;
     padding: 0;
     border: none;
@@ -34,14 +33,15 @@
     }
 
     &--gray {
-      background-color: #EAEAEA;
+      background-color: #eaeaea;
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 400px;
     padding: 0;
     border: none;
+
     &--first {
       width: 1200px;
     }
@@ -68,12 +68,12 @@
   padding-top: 16px;
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 20px;
     padding-top: 22px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -95,11 +95,11 @@
   font-weight: 700;
   padding: 0;
   margin: 0;
+  width: 80%;
 }
 
 .catalog-pictures__author {
-
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -111,47 +111,15 @@
   top: 68px;
   left: -6px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     top: auto;
     left: auto;
     bottom: 9px;
     right: 20px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     bottom: 26px;
     right: 20px;
   }
-
-  &--count {
-    font-weight: 700;
-    margin-left: 4px;
-
-    @media (min-width:$tablet-width) {
-      margin-left: 0;
-    }
-
-    @media (min-width:$desktop-width) {
-      color: #ffffff;
-    }
-  }
-
-  &--button {
-    border: none;
-    background-color: transparent;
-
-    @media (min-width:$desktop-width) {
-      fill: #ffffff;
-    }
-  }
-
-  &--icon {
-    color:rgba(0, 0, 0, 0.3);
-
-    @media (min-width:$desktop-width) {
-      color: #ffffff;
-    }
-  }
 }
-
-

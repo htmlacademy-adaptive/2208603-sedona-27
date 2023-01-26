@@ -16,6 +16,7 @@
   &:hover {
     background-color: #e5e5e5;
   }
+
   &:active {
     background-color: #d5d5d5;
   }
@@ -46,7 +47,7 @@
   left: 12px;
   width: 22px;
   height: 16px;
-  background-image: url(../img/decor/tick.svg);
+  background-image: url"(../img/decor/tick.svg)";
   background-repeat: no-repeat;
   content: "";
 }

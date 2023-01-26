@@ -6,12 +6,12 @@
   line-height: 26px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-top: -16px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 47px;
   }
 }
@@ -23,11 +23,11 @@
   padding-top: 0;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 5px 153px 87px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 5px 369px 87px;
   }
 }
@@ -38,25 +38,33 @@
   min-height: 177px;
   width: 280px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 500px;
     width: 648px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 800px;
   }
 }
 
 .catalog-presentation {
-  margin-bottom: -4px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 103px;
+  }
 }
 
 .catalog-presentation__video {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .catalog-presentation__button {
