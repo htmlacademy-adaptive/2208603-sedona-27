@@ -69,4 +69,8 @@
 
 .site-list__item--current a {
   border-top: none;
+
+      @media (min-width:$tablet-width) {
+        color: #766357;
+      }
 }
