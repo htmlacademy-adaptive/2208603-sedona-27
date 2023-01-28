@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  height: 56px;
+  min-height: 56px;
   overflow: hidden;
   background-color: #81b3d2;
 
@@ -141,3 +141,22 @@
   display: block;
 }
 
+.main-nav--nojs .site-list a {
+  @media (min-width: $mobile-width-only) {
+    background-color: #81b3d2;
+  }
+
+  @media (min-width: 321px) {
+    background-color: #ffffff;
+  }
+}
+
+.main-nav--nojs {
+  @media (min-width: $mobile-width-only) {
+    margin-top: 96px;
+  }
+
+  @media (min-width: 321px) {
+    margin-top: 0;
+  }
+}
