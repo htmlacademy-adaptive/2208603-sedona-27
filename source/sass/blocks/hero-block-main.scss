@@ -8,7 +8,11 @@
   background-color: #f2f2f2;
   background-size: cover;
 
-  @media (min-width:$tablet-width) {
+  @media (min-resolution: 2dppx) {
+    background-image: url(/img/content/main-hero-bg-mobile@2x.jpg);
+  }
+
+  @media (min-width: $tablet-width) {
     background-image: url(/img/content/main-hero-bg-tablet.jpg);
     min-height: 518px;
 
@@ -17,8 +21,12 @@
     }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-image: url(/img/content/main-hero-bg-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(/img/content/main-hero-bg-desktop@2x.jpg);
+    }
   }
 }
 
@@ -28,7 +36,7 @@
   width: 282px;
   height: 214px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 460px;
     height: 350px;
     margin-top: -13px;
@@ -49,12 +57,12 @@
   text-align: center;
   min-width: 284px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
     padding: 48px 126px 20px 124px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 59px 357px 20px 357px;
   }
 }
@@ -66,17 +74,17 @@
   padding-top: 3px;
   text-align: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 55px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 44px;
   }
 }
 
-.hero-block-main:before {
+.hero-block-main::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -88,7 +96,7 @@
   background-position: center;
 }
 
-.hero-block-intro:before {
+.hero-block-intro::before {
   content: "";
   position: absolute;
   top: 222px;
@@ -100,7 +108,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:321px) {
+  @media (min-width: 321px) {
     display: none;
   }
 }

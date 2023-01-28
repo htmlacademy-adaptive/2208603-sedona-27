@@ -6,7 +6,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 11px;
   }
 }
@@ -20,16 +20,16 @@
   color: #ffffff;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.social__link--icon {
+.social__icon {
   width: 24px;
   height: 24px;
 }

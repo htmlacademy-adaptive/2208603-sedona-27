@@ -1,85 +1,76 @@
 .site-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    @media (min-width:$tablet-width) {
-      flex-direction: row;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .site-list__item {
-    @media (min-width:$tablet-width) {
-        width: 153px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 21px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
 
-    @media (min-width:$desktop-width) {
-        width: 240px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }
 
 .site-list a {
-     position: relative;
-     display: block;
-     text-align: center;
-     padding-top: 17px;
-     padding-bottom: 17px;
-     font-size: 18px;
-     line-height: 26px;
-     font-weight: 700;
-     color: #ffffff;
-     text-decoration: none;
-     border-top: 1px solid rgba(255, 255, 255, 0.2);
-     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-    &:active {
-        background-color: #5496BD;
-        color: rgba(255, 255, 255, 0.3);
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 
-        @media (min-width:$tablet-width) {
-        background-color: #ffffff;
-        color: #B3B3B3;
-        }
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      color: #b3b3b3;
     }
-
-    &:hover {
-        background-color: #669EC0;
-
-        @media (min-width:$tablet-width) {
-          background-color: #ffffff;
-          color: #766357;
-          }
-    }
-
-    @media (min-width:$tablet-width) {
-      color: #000000;
-      border: none;
-      font-size: 14px;
-      line-height: 21px;
-      width: 153px;
-    }
-
-    @media (min-width:$desktop-width) {
-      width: 240px;
-    }
-}
-
-  .main-nav--closed .site-list__item {
-     display: none;
-
-     @media (min-width:$tablet-width) {
-      display: block;
-     }
-
   }
 
-  .site-list__item--current a {
-      border-top: none;
+  &:hover {
+    background-color: #669ec0;
+
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      color: #766357;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
+}
+
+.site-list__item--current a {
+  border-top: none;
 
       @media (min-width:$tablet-width) {
         color: #766357;
       }
-  }
+}
